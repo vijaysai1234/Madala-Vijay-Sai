@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+</head>
+<style>
+    body{
+        background-image: url("background.jpeg");
+
+        height: 100%;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+    .container {
+        border-radius: 25px;
+        border: 2px solid rgb(17, 16, 16);
+        width: 400px;
+        height: 500px;
+        margin: 90px auto;
+        background-color: rgba(136, 234, 241, 0.418);
+    }
+   
+
+    h1 {
+        margin: 0px 0px 40px 0px;
+        position: relative;
+        top: 30px;
+        left: 150px;
+        color: #f82c08;;
+    }
+
+    label {
+        position: relative;
+        font-weight: 700;
+        margin: 10px 0px;
+        top: 10px;
+        left: 65px;
+    }
+   
+
+    form input[name=email] {
+        margin: 0px 0px 12px 0px;
+        padding: 10px;
+        width: 265px;
+        position: relative;
+        top: 10px;
+        left: 65px;
+       
+    }
+
+    form input[name=password] {
+        margin: 0px 0px 12px 0px;
+        padding: 10px;
+        width: 265px;
+        position: relative;
+        top: 10px;
+        left: 65px;
+        
+    }
+
+    form .btnn {
+        margin: 0px 0px 12px 0px;
+        padding: 10px;
+        width: 290px;
+        position: relative;
+        top: 10px;
+        left: 65px;
+        background-color: #45a049;;
+        border-radius: 15px;
+    }
+    form .btnn1{
+        margin: 0px 0px 12px 0px;
+        padding: 10px;
+        width: 290px;
+        position: relative;
+        top: 10px;
+        left: 65px;
+       background-color: #45a049;;
+        border-radius: 15px;
+    }
+
+    form input[name=remember] {
+
+        position: relative;
+        top: 10px;
+        left: 65px;
+    }
+
+    ul a {
+
+        font-size: 18px;
+        text-decoration: none;
+        position: relative;
+       
+        left: 300px;
+        bottom: 16px;
+    }
+</style>
+
+<body>
+    <div class="container">
+       
+        <h1>login</h1>
+        <form action="Index.html" name="loginform" method="post" onsubmit="validate()">
+            <label for="username">Username/email</label><br>
+            <input type="text" name="email" id="email" placeholder="Enter Username" ><br>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter Password" ><br>
+            <button class ="btnn" type="submit" id="myButton" class="float-left submit-button"  >login</button><br>
+            
+
+            <input type="checkbox" name="remember" id="remember">
+            <label for="remember">Remember me</label><br>
+
+            <ul><a href="forgot.html">forgot?</a></ul>
+            
+
+        </form>
+        <form action="signup.html"  >
+            <button class ="btnn1" type="submit" id="myButton" >sign up</button>
+        </form>
+    </div>
+    <script>
+    
+    function validate(){
+        var x=document.forms["loginform"]["email"].value;
+        var y=document.forms["loginform"]["password"].value;
+        if(x==""){
+            alert("your username if empty");
+           
+        }
+        if(y==""){
+            alert("your pasword is empty");
+            
+        }
+    }
+    $(document).ready(function(){
+    $("#email,#password").on({
+    keyup:function(){
+        $(this).css('background','lawngreen');
+    },
+   
+    mouseup:function(){
+    $(this).css('background','red');
+    }
+    })
+    })
+        
+   
+
+    
+    </script>
+</body>
+
+</html>

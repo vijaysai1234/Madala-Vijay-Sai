@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="utils.css">
+    <title>Index</title>
+    <link rel="shortcut icon" href="Logo.jpg" type="image">
+</head>
+<body>
+    <div class="continer-head">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Logo.jpg" alt="" width="100px">
+            </div>
+            <ul>
+                
+                <li class="active"><a href="Home.html">home</a></li>
+                <li class="active" ><a href="about.html">about</a></li>
+                <li class="active"><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="search here">
+                <button class="btn">search</button>
+                
+            </div>
+         <div class="login">
+                <button class="btn2" id="bt1" onclick="window.location.href='login.html'">login</button>
+
+            </div> 
+        </nav>
+    </header>
+    </div>
+    
+    <div class="scroll-right">
+        <p>Welcome to Study.com    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Welcome to Study.com &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Welcome to Study.com &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Welcome to Study.com &nbsp; &nbsp; &nbsp;  </p>
+        </div>
+        <br>
+
+<div class="container">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="image.jpeg" style="width: 1100px; height: 600px;">
+  <div class="text">Study.com</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Image3.jpeg" style="width: 1100px; height: 600px;">
+  <div class="text">Study.com</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Image2.jpeg" style="width: 1100px; height: 600px;">
+  <div class="text">Study.com</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+
+  
+}
+</script>
+<br>
+<div class="achivements">
+    <div class="heading">
+        <h1>ACHIEVEMENTS</H1>
+    </div>
+<br>
+    <div class="cards">
+        
+        <div class="card-item">
+            <img src="Logo.jpg" alt="" width="400px"  height="300">
+                <div class="lines">
+                    <h2>We have successfully achieved our milestone by reaching 1 million users and became India's leading study platform within a span of two years.</h2>
+                        
+                </div>
+        </div>
+        <div class="card-item">
+            <img src="people.jpeg" alt="" width="400px" height="300">
+                <div class="lines">
+                    <h2>Studend who completed their  course in study. com has achieved their dream companies and has been serving in the top position of respective companies</h2>
+                       
+                 </div>
+        </div>
+        <div class="card-item">
+            <img src="one.jpg" alt="" width="400px"  height="300">
+                <div class="lines">
+                        <h2>Study. Com is now India's most valuable unicorn startup. As per CB Insights data, as of June 2021, study. Com is the 11th most valuable startup in the worlds</h2>
+                       
+                        
+                </div>
+        </div>
+
+    </div>
+    
+</div>
+<br>
+<div class="achivements">
+    <div class="heading">
+        <h1>BEST COURSES</H1>
+    </div>
+<br>
+    <div class="cards">
+        
+        <div class="card-item">
+            <img src="html.jpg" alt="" width="400px"  height="300"><br>
+            <div class="ExploreCoursesSection_data__1u_tv">
+                <h2>HTML</h2>
+                
+                <div class="ExploreCoursesSection_data_description_a6jsQ">
+                <div>
+                <span>Class Type</span>
+                <span>Live Online &amp; Offline</span>
+                </div>
+                <div>
+                <span>Satisfied Learners</span>
+                <span>650+</span></div>
+                <div><span>Duration</span><span>150+ Hours</span></div>
+                
+                <div><span>Industry Professor</span><span>155+</span></div>
+                </div>
+                </div>  
+                   
+                        
+            
+        </div>
+        <div class="card-item">
+            <img src="js (1).jpeg" alt="" width="400px" height="300"><br>
+            <div class="ExploreCoursesSection_data__1u_tv">
+                <h2>JS</h2>
+                
+                <div class="ExploreCoursesSection_data_description_a6jsQ">
+                <div>
+                <span>Class Type</span>
+                <span>Live Online &amp; Offline</span>
+                </div>
+                <div>
+                <span>Satisfied Learners</span>
+                <span>650+</span></div>
+                <div><span>Duration</span><span>150+ Hours</span></div>
+                
+                <div><span>Industry Professor</span><span>155+</span></div>
+                </div>
+                </div>
+        </div>
+        <div class="card-item">
+            <img src="java.jpeg" alt="" width="400px"  height="300"><br>
+            <div class="ExploreCoursesSection_data__1u_tv">
+                <h2>JAVA</h2>
+                
+                <div class="ExploreCoursesSection_data_description_a6jsQ">
+                <div>
+                <span>Class Type</span>
+                <span>Live Online &amp; Offline</span>
+                </div>
+                <div>
+                <span>Satisfied Learners</span>
+                <span>650+</span></div>
+                <div><span>Duration</span><span>150+ Hours</span></div>
+                
+                <div><span>Industry Professor</span><span>155+</span></div>
+                </div>
+                </div>
+        </div>
+
+    </div>
+    
+</div>
+
+</div>
+
+
+<footer class="flex-all-center">
+    <p>Copyright &copy all rights are reserved under pavan</p>
+</footer>
+
+
+
+
+    
+</body>
+</html>
